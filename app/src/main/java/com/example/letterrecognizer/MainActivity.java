@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button;
+    Button btn;
     TextView textView;
     EditText input;
     String textInput;
@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button=(Button)findViewById(R.id.btn);
+        btn=(btn)findViewById(R.id.btn);
         textView=(TextView) findViewById(R.id.result);
         input=(EditText) findViewById(R.id.input);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
