@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button button;
     TextView textView;
-    EditText edit;
+    EditText input;
     String text;
 
     @Override
@@ -22,13 +22,13 @@ public class MainActivity extends AppCompatActivity {
 
         button=(Button)findViewById(R.id.btn);
         textView=(TextView) findViewById(R.id.result);
-        edit=(EditText) findViewById(R.id.input);
+        input=(EditText) findViewById(R.id.input);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                text=edit.getText().toString();
+                text=input.getText().toString();
 
                 if(text.length()>1)
                 {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                         textView.setText("Grass letter");
                     }
                 }
-                edit.setText("");
+                input.setText("");
             }
         });
     }
