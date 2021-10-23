@@ -38,15 +38,15 @@ public class MainActivity extends AppCompatActivity {
                 {
                     if(textInput.equals("g") || textInput.equals("j")|| textInput.equals("p")||textInput.equals("q")||textInput.equals("y"))
                     {
-                        textView.setText("Root Letter");
+                        textView.setText("it is Root Letter");
                     }
                     else if(textInput.equals("b")||textInput.equals("d")||textInput.equals("f")||textInput.equals("h")||textInput.equals("k")||textInput.equals("l")||textInput.equals("t"))
                     {
-                        textView.setText("Sky Letter");
+                        textView.setText(" It is Sky Letter");
                     }
                     else
                     {
-                        textView.setText("Grass letter");
+                        textView.setText("It is Grass Letter");
                     }
                 }
                 input.setText("");
