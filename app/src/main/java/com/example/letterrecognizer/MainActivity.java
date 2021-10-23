@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button button;
     TextView textView;
     EditText input;
-    String text;
+    String textInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,19 +28,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                text=input.getText().toString();
+                textInput=input.getText().toString();
 
-                if(text.length()>1)
+                if(textInput.length()>1)
                 {
                     textView.setText("Error: Please enter just single letter");
                 }
                 else
                 {
-                    if(text.equals("g") || text.equals("j")|| text.equals("p")||text.equals("q")||text.equals("y"))
+                    if(textInput.equals("g") || textInput.equals("j")|| textInput.equals("p")||textInput.equals("q")||textInput.equals("y"))
                     {
                         textView.setText("Root Letter");
                     }
-                    else if(text.equals("b")||text.equals("d")||text.equals("f")||text.equals("h")||text.equals("k")||text.equals("l")||text.equals("t"))
+                    else if(textInput.equals("b")||textInput.equals("d")||textInput.equals("f")||textInput.equals("h")||textInput.equals("k")||textInput.equals("l")||textInput.equals("t"))
                     {
                         textView.setText("Sky Letter");
                     }
