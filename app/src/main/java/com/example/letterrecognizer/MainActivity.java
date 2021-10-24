@@ -27,12 +27,6 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                text=edit.getText();
-
-//                if(edit.getText() instanceof Integer)
-//                {
-//                    textView.setText("Error: Please Don't enter a number");
-//                }
 
                 text=edit.getText().toString();
 
@@ -56,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 edit.setText("");
-//                textView.setText(text);
             }
         });
     }
